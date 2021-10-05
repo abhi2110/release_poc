@@ -1,4 +1,4 @@
-package com.test.poc;
+package org.rakuten.poc.main;
 
 public class Calculator {
 
@@ -17,5 +17,4 @@ public class Calculator {
 	public int multiply(int a, int b) {
 		return a * b;
 	}
-
 }

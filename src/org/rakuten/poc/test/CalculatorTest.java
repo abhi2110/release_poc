@@ -1,7 +1,8 @@
-package com.test.poc;
+package org.rakuten.poc.test;
 
 import junit.framework.Assert;
 import org.junit.Test;
+import org.rakuten.poc.main.Calculator;
 
 public class CalculatorTest {
 
