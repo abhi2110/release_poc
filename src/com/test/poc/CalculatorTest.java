@@ -2,7 +2,6 @@ package com.test.poc;
 
 import junit.framework.Assert;
 import org.junit.Test;
-import com.test.poc.Calculator;
 
 public class CalculatorTest {
 
