@@ -1,4 +1,4 @@
-package org.rakuten.poc.main;
+package org.release.poc.main;
 
 public class Calculator {
 

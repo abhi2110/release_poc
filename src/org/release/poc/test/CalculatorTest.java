@@ -1,21 +1,15 @@
-package org.rakuten.poc.test;
+package org.release.poc.test;
 
 import junit.framework.Assert;
 import org.junit.Test;
-import org.rakuten.poc.main.Calculator;
+import org.release.poc.main.Calculator;
 
 public class CalculatorTest {
-
-	Calculator calculator;
-
-	public CalculatorTest(Calculator calculator) {
-		this.calculator = calculator;
-	}
 
 	@Test
 	public void testSum() {
 		// Given
-
+		Calculator calculator = new Calculator();
 		// When
 		int result = calculator.sum(2, 2);
 		// Then
@@ -26,24 +20,19 @@ public class CalculatorTest {
 
 	@Test
 	public void testMinus() {
-//		Calculator calculator = new Calculator();
+		Calculator calculator = new Calculator();
 		Assert.assertEquals(0, calculator.minus(2, 2));
 	}
 
 	@Test
 	public void testDivide() {
-//		Calculator calculator = new Calculator();
+		Calculator calculator = new Calculator();
 		Assert.assertEquals(2, calculator.divide(6, 3));
 	}
 
 	@Test(expected = ArithmeticException.class)
 	public void testDivideWillThrowExceptionWhenDivideOnZero() {
-//		Calculator calculator = new Calculator();
-		calculator.divide(6, 0);
-	}
-
-	public static void main(String[] args) {
 		Calculator calculator = new Calculator();
-		CalculatorTest calc = new CalculatorTest(calculator);
+		calculator.divide(6, 0);
 	}
 }
